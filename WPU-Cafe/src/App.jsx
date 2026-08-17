@@ -42,8 +42,8 @@ function App() {
               type="search" 
               placeholder='Cari Menu' 
               id='search-input' 
-              value={keyword} // Menghubungkan input ke state
-              onChange={(e) => setKeyword(e.target.value)} // Mengubah state saat mengetik
+              value={keyword} 
+              onChange={(e) => setKeyword(e.target.value)} 
               className='bg-white rounded-md p-1.5 min-w-2xs'
             />
               <button class="search-button px-4 py-1.5 rounded-md bg-[#008080] text-white hover:bg-[#006666] transition-colors">Cari</button>
