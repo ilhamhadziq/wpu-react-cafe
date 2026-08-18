@@ -1,6 +1,7 @@
 import './index.css'
 import Menu from './Menu'
 import { useState,useEffect } from 'react'
+import Button from './UI/Button';
 
 function App() {
   const [menus, setMenus] = useState([]);
@@ -45,8 +46,8 @@ function App() {
               value={keyword} 
               onChange={(e) => setKeyword(e.target.value)} 
               className='bg-white rounded-md p-1.5 min-w-2xs'
-            />
-              <button class="search-button px-4 py-1.5 rounded-md bg-[#008080] text-white hover:bg-[#006666] transition-colors">Cari</button>
+              />
+              <Button>Cari</Button>
             </form>
             {loading ? (
               <p className="text-center p-4">Loading menu...</p>
